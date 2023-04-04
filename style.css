@@ -1,0 +1,97 @@
+/* to import font po */
+@font-face {
+  font-family: digital;
+  src: url(./fonts/Digital\ Dismay.otf);
+}
+/* grouping selector po, makatamad kasi kung iisaisahin pa hahaha */
+#hour, #minutes, #seconds {
+  font-family: digital;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  background: url("chill.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 14px;
+  text-align: center;
+  color: white;
+}
+
+.clock {
+  display: flex;
+}
+
+.clock div {
+  margin: 5px;
+  position: relative;
+}
+
+.clock span {
+  width: 100px;
+  height: 80px;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.clock .text {
+  height: 30px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: orange;
+  opacity: 0.8;
+}
+
+.clock #ampm {
+  bottom: 0;
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  font-size: 20px;
+  background: white;
+}
+/* to toggle dark and light mode */
+#hour, #minutes, #seconds {
+  background: white;
+  color: black;
+  border: 1px solid black;
+}
+
+#hour.dark-mode,
+#minutes.dark-mode,
+#seconds.dark-mode {
+  background: black;
+  color: white;
+  border: 1px solid white;
+}
+
+button {
+        background: white;
+        border: 1px solid black;
+        color: black;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-top: 30px;
+      }
+
+      button.dark-mode {
+        background: black;
+        color: white;
+        border: 1px solid white;
+      }
